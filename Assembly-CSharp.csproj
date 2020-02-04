@@ -2,6 +2,8 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
+    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.3.0f6\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -45,12 +47,28 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.0f6\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.0f6\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\AvionSpawn.cs" />
      <Compile Include="Assets\Scripts\CursorObjeto.cs" />
      <Compile Include="Assets\Scripts\DetaiNodos.cs" />
      <Compile Include="Assets\Scripts\ManagerHumano.cs" />
      <Compile Include="Assets\Scripts\ManagerVirus.cs" />
      <Compile Include="Assets\Scripts\Manager_Inicio.cs" />
      <Compile Include="Assets\Scripts\Manager_Menu.cs" />
+     <Compile Include="Assets\Scripts\follow.cs" />
+     <Compile Include="Assets\Scripts\gameManager.cs" />
+     <Compile Include="Assets\Scripts\mousePointer.cs" />
+     <Compile Include="Assets\Scripts\moverAvioneta.cs" />
+     <Compile Include="Assets\Scripts\tileData.cs" />
+     <Compile Include="Assets\Scripts\tileGenerator.cs" />
+     <None Include="Assets\Fuentes\symtext\Font License.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/ProyCure/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -83,9 +101,6 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/ProyCure/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine">
- <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -263,9 +278,6 @@
  </Reference>
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor">
- <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -614,7 +626,7 @@
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

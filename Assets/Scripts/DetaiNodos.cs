@@ -27,6 +27,6 @@ public class DetaiNodos : MonoBehaviour
     }
 
     void OnMouseExit() {
-       anim.SetBool("LugarSelect", false); 
+        anim.SetBool("LugarSelect", false); 
     }
 }
