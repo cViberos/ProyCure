@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Campo.unity
+- path: Assets/Scenas/Campo.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
