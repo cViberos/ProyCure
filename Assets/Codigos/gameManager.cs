@@ -16,9 +16,8 @@ public class gameManager : MonoBehaviour
     private RaycastHit hit;
     public GameObject[,] matrixDisp;
     
-    [Header("OBJETOS DE LOS BANDOS")]
+    [Header("DETALLE DE LOS BANDOS")]
     [Tooltip("Definicion de datos relevantes a los jugadores")]
-
     public Color ColorHumano;
     public Color ColorVirus;
     public GameObject[] tilesJugador1;
@@ -76,7 +75,6 @@ public class gameManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         //print("Es el turno:" + turn);
