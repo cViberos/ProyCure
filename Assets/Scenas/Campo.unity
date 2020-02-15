@@ -10443,7 +10443,14 @@ MonoBehaviour:
   SumaDados: {fileID: 1119830977175787877}
   Dado1: {fileID: 1119830978060093569}
   Dado2: {fileID: 1119830976738518786}
-  DadoCaras: []
+  DadoCaras:
+  - {fileID: -7364030533593557162, guid: dce770c5321bc0d4ab70b341ca7b188b, type: 3}
+  - {fileID: 3891398636548463400, guid: dce770c5321bc0d4ab70b341ca7b188b, type: 3}
+  - {fileID: -3962687663790203039, guid: dce770c5321bc0d4ab70b341ca7b188b, type: 3}
+  - {fileID: 2207632109788774400, guid: dce770c5321bc0d4ab70b341ca7b188b, type: 3}
+  - {fileID: -2258227979151295953, guid: dce770c5321bc0d4ab70b341ca7b188b, type: 3}
+  - {fileID: -6848960557641865117, guid: dce770c5321bc0d4ab70b341ca7b188b, type: 3}
+  - {fileID: 6721517481594523075, guid: dce770c5321bc0d4ab70b341ca7b188b, type: 3}
   DadoAnimacion: []
 --- !u!1 &1119830977837890196
 GameObject:
